@@ -16,7 +16,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.x
+          python-version: 3.12
 
       - name: Install pipenv
         run: pip install pipenv
@@ -26,8 +26,8 @@ jobs:
           cd ./
           pipenv install --deploy --ignore-pipfile
 
-      - name: show flake8
-        run: pipenv show -f flake8
+      # - name: show flake8
+      #   run: pipenv show -f flake8
 
       - name: Run Lint
         run: pipenv run .flake8 --config=./.flake8
@@ -47,7 +47,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.x
+          python-version: 3.12
 
       - name: Install pipenv
         run: pip install pipenv
@@ -74,7 +74,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.x
+          python-version: 3.12
 
       - name: Install pipenv
         run: pip install pipenv
