@@ -28,7 +28,7 @@ jobs:
 
       - name: Run Lint
         working-directory: ./
-        run: pipenv run flake8
+        run: pipenv run .flake8
 
       - name: Handle Lint Errors
         if: failure()
