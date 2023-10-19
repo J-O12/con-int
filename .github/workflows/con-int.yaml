@@ -27,7 +27,7 @@ jobs:
           pipenv install --deploy --ignore-pipfile
 
       - name: Run Lint
-        working-directory: ./Movies
+        working-directory: ./
         run: pipenv run lint
 
       - name: Handle Lint Errors
