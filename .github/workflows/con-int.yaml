@@ -27,8 +27,8 @@ jobs:
           pipenv install --deploy --ignore-pipfile
 
       - name: Run Lint
+        run: pipenv run .flake8 --config=./.flake8
         working-directory: ./
-        run: pipenv run .flake8
 
       - name: Handle Lint Errors
         if: failure()
