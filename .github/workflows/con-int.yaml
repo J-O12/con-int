@@ -24,9 +24,10 @@ jobs:
       - name: Install Dependencies
         run: |
           cd ./
-          pipenv install --deploy --ignore-pipfile
+          pipenv install --dev      
 
-      # - name: show flake8
+
+      # - name: show flake8 deploy --ignore-pipfile
       #   run: pipenv show -f flake8
 
       - name: Run Lint
