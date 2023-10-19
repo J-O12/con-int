@@ -26,6 +26,9 @@ jobs:
           cd ./
           pipenv install --deploy --ignore-pipfile
 
+      - name: show flake8
+        run: pipenv show -f flake8
+
       - name: Run Lint
         run: pipenv run .flake8 --config=./.flake8
         working-directory: ./
