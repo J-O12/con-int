@@ -74,5 +74,5 @@ jobs:
         working-directory: ./src
         run: npm run build
 
-      -name: run echo
+      - name: run echo
         run: echo "done"
